@@ -20,9 +20,9 @@ export default function Contact() {
 
           <div className="space-y-8">
             {[
-              { icon: Mail, label: "Email", value: "alfarissyafiq338@gmail.com" },
-              { icon: MapPin, label: "Location", value: "Cikarang Barat, Telaga Harapan" },
-              { icon: Phone, label: "Phone", value: "0822-9751-2676" },
+              { icon: Mail, label: "Email", value: "revanpratama434@gmail.com" },
+              { icon: MapPin, label: "Location", value: "Cileungsi, Bogor" },
+              { icon: Phone, label: "Phone", value: "+62 896 5280 9744" },
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-4">
                 <div className="p-4 rounded-2xl glass text-glitch-blue">

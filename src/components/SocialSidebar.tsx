@@ -3,9 +3,9 @@ import { Instagram, MessageCircle, Linkedin } from "lucide-react";
 
 export default function SocialSidebar() {
   const socials = [
-    { Icon: Instagram, href: "https://www.instagram.com/shafiqalfaris?igsh=MWl5Zm8zanVwanJ3aQ==", label: "Instagram" },
-    { Icon: MessageCircle, href: "https://wa.me/6282297512676", label: "WhatsApp" },
-    { Icon: Linkedin, href: "https://www.linkedin.com/in/muhammad-syafiq-al-faris-a9ba16333?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "LinkedIn" },
+    { Icon: Instagram, href: "https://www.instagram.com/revanpratama_44?igsh=ZWJuY3hzNWg1Z2Vi", label: "Instagram" },
+    { Icon: MessageCircle, href: "https://wa.me/6289652809744", label: "WhatsApp" },
+    { Icon: Linkedin, href: "https://www.linkedin.com/in/reva-dede-pratama-78662a371?utm_source=share_via&utm_content=profile&utm_medium=member_android", label: "LinkedIn" },
   ];
 
   return (

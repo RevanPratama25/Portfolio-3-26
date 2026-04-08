@@ -20,11 +20,6 @@
   body {
     @apply bg-dark-bg text-stardust font-sans selection:bg-glitch-blue/30 selection:text-glitch-blue;
     overflow-x: hidden;
-    cursor: none;
-  }
-  
-  a, button, [role="button"], .cursor-pointer {
-    cursor: none !important;
   }
 }
 

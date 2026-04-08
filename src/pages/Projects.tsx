@@ -3,62 +3,48 @@ import { Award, X, ZoomIn } from "lucide-react";
 import { useState } from "react";
 
 // Image paths from public root
-const projectEnterprise = "/project-enterprise.png";
-const projectMtcna = "/project-mtcna.png";
-const projectSuperlab = "/project-superlab.png";
-const certMtcna = "/cert-mtcna.jpeg";
-const certMtcre = "/cert-mtcre.jpeg";
-const certVm = "/cert-vm.jpeg";
-const certToefl = "/cert-toefl.jpeg";
+const projectAssetFlow = "/project-assetflow.png";
 
 const projects = [
   {
-    title: "ENTERPRISE NETWORK DESIGN",
-    category: "Infrastructure",
-    image: projectEnterprise,
-    description: "Designing a scalable corporate network using Cisco hierarchical models with redundant links and high availability.",
-    tags: ["Cisco", "VLAN", "OSPF"],
-  },
-  {
-    title: "Book MTCNA",
-    category: "Network Management",
-    image: projectMtcna,
-    description: "A comprehensive guide and lab workbook for mastering MikroTik Certified Network Associate concepts and configurations.",
-    tags: ["MikroTik", "RADIUS", "Queue Tree"],
-  },
-  {
-    title: "Book SUPERLAB",
-    category: "Security",
-    image: projectSuperlab,
-    description: "Advanced network security and routing scenarios designed for hands-on practice in a virtualized environment.",
-    tags: ["IPsec", "Firewall", "Tunneling"],
-  },
+    title: "AssetFlow - Sistem Manajemen Aset Terintegrasi",
+    category: "Web Application",
+    image: projectAssetFlow,
+    description: "Tinggalkan spreadsheet manual. AssetFlow membantu perusahaan memantau stok, melacak peminjaman, dan menangani laporan kerusakan dalam satu dashboard modern.",
+    tags: ["Dashboard", "Management", "UI/UX"],
+  }
 ];
 
 const certificates = [
   {
-    title: "MikroTik Certified Network Associate (MTCNA)",
-    issuer: "MikroTikls SIA",
-    date: "2025",
-    image: certMtcna,
+    title: "CS101: Introduction to Programming I",
+    issuer: "Saylor Academy",
+    date: "Nov 2025",
+    image: "/cert-cs101.jpg",
   },
   {
-    title: "MikroTik Certified Routing Engineer (MTCRE)",
-    issuer: "MikroTikls SIA",
-    date: "2025",
-    image: certMtcre,
+    title: "Introduction to Front End Development",
+    issuer: "Simplilearn",
+    date: "Nov 2025",
+    image: "/cert-frontend.jpg",
   },
   {
-    title: "Virtual Machine Fundamental",
-    issuer: "Aguna Course",
-    date: "2026",
-    image: certVm,
+    title: "Introduction to CSS",
+    issuer: "Simplilearn",
+    date: "Nov 2025",
+    image: "/cert-css.jpg",
   },
   {
-    title: "English Proficiency Test (TOEFL) - Score 537",
-    issuer: "Brighten English",
-    date: "2025",
-    image: certToefl,
+    title: "JavaScript Essentials 1",
+    issuer: "Cisco Networking Academy",
+    date: "Feb 2026",
+    image: "/cert-js1.jpg",
+  },
+  {
+    title: "JavaScript Essentials 2",
+    issuer: "Cisco Networking Academy",
+    date: "Feb 2026",
+    image: "/cert-js2.jpg",
   },
 ];
 
@@ -113,11 +99,11 @@ export default function Projects() {
           </p>
         </div>
         <div className="flex gap-4">
-          <span className="px-4 py-2 rounded-full glass text-xs font-mono">ALL PROJECTS (3)</span>
+          <span className="px-4 py-2 rounded-full glass text-xs font-mono">ALL PROJECTS (1)</span>
         </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-12 mb-40">
+      <div className="grid md:grid-cols-1 gap-12 mb-40 max-w-4xl mx-auto">
         {projects.map((project, idx) => (
           <motion.div
             key={project.title}

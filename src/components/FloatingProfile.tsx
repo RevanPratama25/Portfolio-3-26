@@ -9,7 +9,7 @@ export default function FloatingProfile() {
       initial={{ x: -100, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
       transition={{ delay: 0.5, duration: 0.8 }}
-      className="fixed top-8 left-8 z-50 flex items-center gap-4 group cursor-pointer"
+      className="absolute top-8 left-8 z-50 flex items-center gap-4 group cursor-pointer"
     >
       <div className="relative">
         {/* Animated Ring */}
@@ -35,7 +35,7 @@ export default function FloatingProfile() {
 
       <div className="flex flex-col">
         <span className="text-sm font-display font-bold tracking-tight group-hover:text-glitch-blue transition-colors">
-          SYAFIQ
+          Reva Dede Pratama
         </span>
         <span className="text-[10px] font-mono text-white/40 uppercase tracking-widest">
           Software Engineer 

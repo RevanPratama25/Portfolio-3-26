@@ -4,7 +4,6 @@ import React, { useEffect } from "react";
 import Navbar from "./components/Navbar";
 import Background from "./components/Background";
 import FloatingProfile from "./components/FloatingProfile";
-import CustomCursor from "./components/CustomCursor";
 import SocialSidebar from "./components/SocialSidebar";
 import Home from "./pages/Home";
 import About from "./pages/About";
@@ -76,7 +75,6 @@ export default function App() {
   return (
     <Router>
       <div className="relative min-h-screen">
-        <CustomCursor />
         <SocialSidebar />
         <Background />
         <FloatingProfile />
